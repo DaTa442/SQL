@@ -1,0 +1,21 @@
+Create Gym Store Database and Stats
+
+Create Table Gym (id Integer Primary Key, name text, Quantity Integer, Price Integer);
+
+Insert Into Gym Values
+(1, "Membership", 50, 20),
+(2, "Cups", 50, 7),
+(3, "Towels", 30, 10),
+(4, "Shoes", 100, 50),
+(5, "Workout Attire", 200, 15);
+
+Select * From Gym
+
+--Display items in order by select price.
+Where price>7
+
+--Display prices of all items in order.
+Order By price;
+
+The total number of items in store.
+Select Sum (quantity) From Gym;
